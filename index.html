@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SACHIN T P — Software Developer Portfolio">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>SACHIN T P | Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="nav-wrapper" id="navbar">
+    <nav class="nav container" role="navigation" aria-label="Primary navigation">
+      <a class="nav-logo" href="#hero">SACHIN T P</a>
+
+      <button class="hamburger" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#education">Education</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link nav-link--cta" href="assets/resume.pdf" download aria-label="Download resume PDF">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="hero__inner container">
+        <div class="hero__text">
+          <span class="hero__greeting">Hi, I'm</span>
+          <h1 class="hero__name gradient-text">SACHIN</h1>
+          <p class="hero__title font-mono">Software Engineer @ SAP Labs</p>
+          <p class="hero__bio">I build scalable, reliable backend systems and full-stack applications using Java (Spring Boot), Python, and modern microservices architectures. Passionate about system design, cloud-native development, and engineering velocity.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">
+              <i class="fa-solid fa-arrow-down" aria-hidden="true"></i> View Projects
+            </a>
+            <a class="btn btn--outline" href="assets/resume.pdf" download>
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="hero__avatar">
+          <img class="avatar" src="assets/images/avatar.png" alt="Sachin T P portrait" width="280" height="280">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Skills &amp; Technologies</h2>
+        <p class="section-subtitle animate-on-scroll">Technologies I work with</p>
+
+        <div class="skills-grid">
+          <div class="skills-group animate-on-scroll" style="transition-delay: 100ms">
+            <h3 class="skills-group__label">Languages</h3>
+            <div class="skills-badges">
+              <span class="badge">Java</span>
+              <span class="badge">Python</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skills-group animate-on-scroll" style="transition-delay: 200ms">
+            <h3 class="skills-group__label">Backend &amp; Frameworks</h3>
+            <div class="skills-badges">
+              <span class="badge">Spring Boot</span>
+              <span class="badge">NestJS</span>
+              <span class="badge">Microservices</span>
+              <span class="badge">REST APIs</span>
+              <span class="badge">Apache Kafka</span>
+            </div>
+          </div>
+
+          <div class="skills-group animate-on-scroll" style="transition-delay: 300ms">
+            <h3 class="skills-group__label">Frontend</h3>
+            <div class="skills-badges">
+              <span class="badge">React</span>
+              <span class="badge">SAP UI5</span>
+              <span class="badge">HTML5</span>
+              <span class="badge">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skills-group animate-on-scroll" style="transition-delay: 400ms">
+            <h3 class="skills-group__label">Cloud, DevOps &amp; Tools</h3>
+            <div class="skills-badges">
+              <span class="badge">Docker</span>
+              <span class="badge">Kubernetes</span>
+              <span class="badge">Argo CD</span>
+              <span class="badge">CI/CD</span>
+              <span class="badge">Git</span>
+              <span class="badge">Playwright</span>
+              <span class="badge">Postman</span>
+              <span class="badge">Dynatrace</span>
+              <span class="badge">Kibana</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Experience</h2>
+
+        <ol class="timeline" role="list">
+
+          <li class="timeline__item animate-on-scroll" style="transition-delay: 100ms">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Developer</h3>
+                <span class="timeline__company">SAP Labs</span>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__date">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  Aug 2024 – Present
+                </span>
+                <span class="timeline__location">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  Bengaluru, India · On-site
+                </span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Owned backend feature development, building scalable REST APIs (NestJS / Spring Boot) in a microservices architecture.</li>
+                <li>Led architectural refactoring of a core service from Onion → Hexagonal architecture, improving modularity and maintainability.</li>
+                <li>Improved production stability by resolving SLA-critical incidents and strengthening observability, security compliance, and platform reliability.</li>
+                <li>Led migration and rollout of a Playwright-based API automation framework, enabling automated PR and Jira ticket workflows and improving regression reliability.</li>
+                <li>Owned end-to-end defect resolution across React, Spring Boot, and UI5; supported Java 17 → 21 upgrade for enhanced stability and scalability.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item animate-on-scroll" style="transition-delay: 200ms">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Full Stack Developer Intern</h3>
+                <span class="timeline__company">Hyreo</span>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__date">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  May 2023 – Jun 2023
+                </span>
+                <span class="timeline__location">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  Trivandrum, India · On-site
+                </span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Worked on internal WordPress development and contributed to the company's live website.</li>
+                <li>Collaborated with senior engineers to build and ship full-stack features end-to-end.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item animate-on-scroll" style="transition-delay: 300ms">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Core Group Member &amp; Student Mentor</h3>
+                <span class="timeline__company">SOCE, CUSAT</span>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__date">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  Aug 2022 – Feb 2024
+                </span>
+                <span class="timeline__location">
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  Cochin, India
+                </span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Served as a Student Mentor at the Skill Orientation Centre for Engineering, organizing and leading technical workshops to support peer learning.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline__item animate-on-scroll" style="transition-delay: 400ms">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Hackathon — Top 5 Finalist</h3>
+                <span class="timeline__company">HackLoop23</span>
+              </div>
+              <div class="timeline__meta">
+                <span class="timeline__date">
+                  <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                  2023
+                </span>
+              </div>
+              <ul class="timeline__bullets">
+                <li>Selected among the top 5 teams out of 20 at HackLoop23.</li>
+                <li>Built <em>zostelXai</em>, a hostel-finder web app with integrated AI/ML features including a chatbot, real-time object detection, text-to-image, and text-to-sign-language.</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Education</h2>
+
+        <div class="edu-card animate-on-scroll" style="transition-delay: 100ms">
+          <div class="edu-card__header">
+            <div>
+              <h3 class="edu-card__degree">Bachelor of Technology — Information Technology</h3>
+              <span class="edu-card__school">Cochin University of Science And Technology (CUSAT)</span>
+            </div>
+            <span class="edu-card__cgpa">CGPA: 9.41</span>
+          </div>
+          <div class="timeline__meta" style="margin-top: 0.75rem">
+            <span class="timeline__date">
+              <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+              2020 – 2024
+            </span>
+            <span class="timeline__location">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              Cochin, Kerala, India
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Projects</h2>
+        <p class="section-subtitle animate-on-scroll">Things I've built</p>
+
+        <div class="projects-grid">
+
+          <article class="project-card animate-on-scroll" style="transition-delay: 100ms">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+              </div>
+              <div class="project-card__links">
+                <a class="icon-link" href="https://github.com/spotananthu/StudentCertificateManagement" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for SmartCert">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">SmartCert</h3>
+            <p class="project-card__desc">A cloud-native Student Certificate Management System built on a secure, scalable microservices ecosystem with API Gateway, Eureka service discovery, Saga orchestration, and Kafka-driven async workflows.</p>
+            <div class="project-card__tags">
+              <span class="tag">Java</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">React</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Argo CD</span>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll" style="transition-delay: 200ms">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <i class="fa-solid fa-microphone" aria-hidden="true"></i>
+              </div>
+              <div class="project-card__links">
+                <a class="icon-link" href="https://github.com/SachinTP02/VoiceBasedEmailAssistance" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Voice Based Email System">
+                  <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Voice Based Email System</h3>
+            <p class="project-card__desc">A voice-controlled email client designed to improve accessibility and communication for visually impaired users, enabling full email workflows through speech input.</p>
+            <div class="project-card__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Django</span>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll" style="transition-delay: 300ms">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <i class="fa-solid fa-keyboard" aria-hidden="true"></i>
+              </div>
+              <div class="project-card__links">
+                <a class="icon-link" href="https://www.hackster.io/ikigai/rubber-ducky-using-arduino-593fb1" target="_blank" rel="noopener noreferrer" aria-label="Project page for Rubber Ducky">
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Rubber Ducky</h3>
+            <p class="project-card__desc">A programmable macro keyboard built on Arduino UNO that automates HID keystroke injection using Ducky Script, enabling rapid execution of custom input sequences.</p>
+            <div class="project-card__tags">
+              <span class="tag">Arduino UNO</span>
+              <span class="tag">Embedded C/C++</span>
+              <span class="tag">HID</span>
+              <span class="tag">Ducky Script</span>
+            </div>
+          </article>
+
+          <article class="project-card animate-on-scroll" style="transition-delay: 400ms">
+            <div class="project-card__header">
+              <div class="project-card__icon">
+                <i class="fa-brands fa-medium" aria-hidden="true"></i>
+              </div>
+              <div class="project-card__links">
+                <a class="icon-link" href="https://medium.com/@sachintp1209/chaos-engineering-with-gremlin-and-chaos-as-a-service-an-empirical-evaluation-f14254e50483" target="_blank" rel="noopener noreferrer" aria-label="Read publication on Medium">
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">Chaos Engineering with Gremlin</h3>
+            <p class="project-card__desc">An empirical evaluation of Chaos Engineering using Gremlin and Chaos-as-a-Service, exploring fault injection strategies to improve system resilience and reliability. Published on Medium.</p>
+            <div class="project-card__tags">
+              <span class="tag">Chaos Engineering</span>
+              <span class="tag">Gremlin</span>
+              <span class="tag">Reliability</span>
+              <span class="tag">Publication</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+        <div class="contact__body animate-on-scroll">
+          <p class="contact__intro">Whether you have a question or just want to say hi — my inbox is always open.</p>
+          <a class="btn btn--primary btn--large" href="mailto:sachintp0912@gmail.com">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Say Hello
+          </a>
+          <div class="contact__socials">
+            <a class="social-link" href="https://github.com/SachinTP02" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/sachin-t-p-955528205/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a class="social-link" href="https://x.com/sachin__tp" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X profile">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__inner container">
+      <p class="footer__copy">
+        &copy; <span id="footer-year"></span> Sachin T P. Built with HTML, CSS &amp; JS.
+      </p>
+      <div class="footer__socials">
+        <a class="social-link social-link--sm" href="https://github.com/SachinTP02" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="social-link social-link--sm" href="https://www.linkedin.com/in/sachin-t-p-955528205/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a class="social-link social-link--sm" href="https://x.com/sachin__tp" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+          <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

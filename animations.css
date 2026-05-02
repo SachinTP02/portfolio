@@ -1,0 +1,159 @@
+/* ===================================================
+   animations.css — Scroll-triggered & hover animations
+   =================================================== */
+
+/* === 1. KEYFRAMES === */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* === 2. SCROLL-TRIGGERED FADE-IN === */
+
+/* Base state: invisible, shifted down */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+/* Resolved state: add .is-visible via IntersectionObserver in main.js */
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === 3. HERO ENTRANCE (runs immediately on page load) === */
+
+/* Hero text blocks animate on load, not on scroll */
+.hero__greeting {
+  animation: fadeInUp 0.6s ease both;
+  animation-delay: 0.1s;
+}
+
+.hero__name {
+  animation: fadeInUp 0.6s ease both;
+  animation-delay: 0.2s;
+}
+
+.hero__title {
+  animation: fadeInUp 0.6s ease both;
+  animation-delay: 0.3s;
+}
+
+.hero__bio {
+  animation: fadeInUp 0.6s ease both;
+  animation-delay: 0.4s;
+}
+
+.hero__actions {
+  animation: fadeInUp 0.6s ease both;
+  animation-delay: 0.5s;
+}
+
+.hero__avatar {
+  animation: fadeIn 0.8s ease both;
+  animation-delay: 0.3s;
+}
+
+/* Animated gradient on hero name */
+.hero__name.gradient-text {
+  background-size: 200% 200%;
+  animation: fadeInUp 0.6s ease both 0.2s, gradientShift 6s ease infinite 1s;
+}
+
+/* === 4. NAV SCROLL-SHRINK TRANSITION === */
+
+/* Defined in style.css; only the duration is tuned here */
+.nav-wrapper {
+  transition:
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* === 5. CARD HOVER LIFT (reinforced here for prefers-reduced-motion override) === */
+
+.project-card {
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.timeline__content {
+  transition: border-color 0.22s ease;
+}
+
+.badge {
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.btn {
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background-color 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.icon-link,
+.social-link {
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+/* === 6. PREFERS-REDUCED-MOTION OVERRIDE === */
+/* Respect user OS setting — disable all motion */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Keep scroll-triggered elements visible from the start */
+  .animate-on-scroll {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+
+  .icon-link:hover,
+  .social-link:hover {
+    transform: none;
+  }
+}
